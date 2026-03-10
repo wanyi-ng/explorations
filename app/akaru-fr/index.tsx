@@ -8,19 +8,19 @@ import { SplitText } from 'gsap/SplitText'
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 export default function Page() {
-  const mainSection = useRef(null)
-  const itemsContainer = useRef(null)
+  const mainSection = useRef<HTMLDivElement | null>(null)
+  const itemsContainer = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    const items = document.querySelectorAll('.MainSectionItem')
-    const innerItems = document.querySelectorAll('.MainSectionItem-inner')
-    const mediaContainers = document.querySelectorAll('.MainSectionItem-mediaContainer')
-    const mediaContainersInner = document.querySelectorAll('.MainSectionItem-mediaContainerInner')
-    const navProgressBar = document.querySelectorAll('.MainSection-navProgressBar')
-    const innerStickies = document.querySelectorAll('.MainSectionItem-innerSticky')
-    const medias = document.querySelectorAll('.MainSectionItem-media')
-    const headerTitle = document.querySelector('.MainSection-headerTitle')
-    const navItemTitles = document.querySelectorAll('.MainSection-navItemTitle')
+    const items = document.querySelectorAll<HTMLElement>('.MainSectionItem')
+    const innerItems = document.querySelectorAll<HTMLDivElement>('.MainSectionItem-inner')
+    const mediaContainers = document.querySelectorAll<HTMLDivElement>('.MainSectionItem-mediaContainer')
+    const mediaContainersInner = document.querySelectorAll<HTMLDivElement>('.MainSectionItem-mediaContainerInner')
+    const innerStickies = document.querySelectorAll<HTMLDivElement>('.MainSectionItem-innerSticky')
+    const medias = document.querySelectorAll<HTMLDivElement>('.MainSectionItem-media')
+    const headerTitle = document.querySelector<HTMLHeadingElement>('.MainSection-headerTitle')
+    const navProgressBar = document.querySelectorAll<HTMLSpanElement>('.MainSection-navProgressBar')
+    const navItemTitles = document.querySelectorAll<HTMLParagraphElement>('.MainSection-navItemTitle')
 
     navItemTitles.forEach((item, i) => {
       gsap.set(item, {
@@ -72,7 +72,7 @@ export default function Page() {
             markers: false,
           })
         })
-      }, itemsContainer.current)
+      }, itemsContainer)
       return () => mobile.revert()
     })
 
@@ -184,7 +184,7 @@ export default function Page() {
         tl.fromTo(innerItems[5], { xPercent: -80 }, { xPercent: 0 }, '<')
         tl.fromTo(mediaContainers[5], { xPercent: 0, scale: 0.6, transformOrigin: '100% 100% 0px' }, { xPercent: -60, scale: 1.0 }, '<')
         tl.fromTo(mediaContainersInner[5], { scale: 1.55, transformOrigin: '50% 50% 0px' }, { scale: 1.0 }, '<')
-      }, mainSection.current)
+      }, mainSection)
       return () => desktop.revert()
     })
 
