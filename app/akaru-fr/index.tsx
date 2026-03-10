@@ -47,7 +47,7 @@ export default function Page() {
       duration: 2,
       ease: 'none',
       onComplete: () => {
-        headerTitle.removeAttribute('aria-hidden')
+        headerTitle?.removeAttribute('aria-hidden')
       },
     })
 
