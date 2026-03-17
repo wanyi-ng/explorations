@@ -106,7 +106,7 @@ export default function Page() {
         tl.addLabel('phase-1')
         tl.fromTo(items[0], { xPercent: 0 }, { xPercent: -100 })
         tl.fromTo(innerItems[0], { xPercent: 0 }, { xPercent: 100 }, '<')
-        tl.fromTo(mediaContainers[0], { xPercent: -60, scale: 1, transformOrigin: '100% 100% 0px' }, { xPercent: -101, scale: 0.8 }, '<') // can increase or decrease -101, but increasing too much will cause media to overlap text as you scroll
+        tl.fromTo(mediaContainers[0], { xPercent: -60, scale: 1, transformOrigin: '100% 100% 0px' }, { xPercent: -101, scale: 0.8 }, '<') // can increase or decrease all instances of -101, but increasing too much will cause media to overlap text as you scroll
         tl.fromTo(mediaContainersInner[0], { xPercent: 0, scale: 1, transformOrigin: '50% 50% 0px' }, { xPercent: -101, scale: 1.2 }, '<')
         tl.fromTo(items[1], { xPercent: 80 }, { xPercent: 0 }, '<')
         tl.fromTo(innerItems[1], { xPercent: -80 }, { xPercent: 0 }, '<')
