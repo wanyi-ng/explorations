@@ -217,7 +217,7 @@ export default function Page() {
         </div>
         <div ref={itemsContainer} className='MainSection-items'>
           <section className='MainSectionItem MainSection-item'>
-            <div className='--index-first MainSectionItem-inner'>
+            <div className='--inner-first MainSectionItem-inner'>
               <div className='MainSectionItem-innerSticky'>
                 <div className='MainSectionItem-background' style={{ backgroundColor: 'var(--section2)' }} />
                 <div className='MainSectionItem-content'>
@@ -247,7 +247,7 @@ export default function Page() {
             </div>
           </section>
           <section className='MainSectionItem MainSection-item'>
-            <div className='--index-between MainSectionItem-inner'>
+            <div className='--inner-between MainSectionItem-inner'>
               <div className='MainSectionItem-innerSticky'>
                 <div className='MainSectionItem-background' style={{ backgroundColor: 'var(--section3)' }} />
                 <div className='MainSectionItem-content'>
@@ -274,7 +274,7 @@ export default function Page() {
             </div>
           </section>
           <section className='MainSectionItem MainSection-item'>
-            <div className='--index-between MainSectionItem-inner'>
+            <div className='--inner-between MainSectionItem-inner'>
               <div className='MainSectionItem-innerSticky'>
                 <div className='MainSectionItem-background' style={{ backgroundColor: 'var(--section4)' }} />
                 <div className='MainSectionItem-content'>
@@ -301,7 +301,7 @@ export default function Page() {
             </div>
           </section>
           <section className='MainSectionItem MainSection-item'>
-            <div className='--index-between MainSectionItem-inner'>
+            <div className='--inner-between MainSectionItem-inner'>
               <div className='MainSectionItem-innerSticky'>
                 <div className='MainSectionItem-background' style={{ backgroundColor: 'var(--section5)' }} />
                 <div className='MainSectionItem-content'>
@@ -330,7 +330,7 @@ export default function Page() {
             </div>
           </section>
           <section className='MainSectionItem MainSection-item'>
-            <div className='--index-between MainSectionItem-inner'>
+            <div className='--inner-between MainSectionItem-inner'>
               <div className='MainSectionItem-innerSticky'>
                 <div className='MainSectionItem-background' style={{ backgroundColor: 'var(--section6)' }} />
                 <div className='MainSectionItem-content'>
@@ -359,7 +359,7 @@ export default function Page() {
             </div>
           </section>
           <section className='MainSectionItem --bg-terra MainSection-item'>
-            <div className='--index-last MainSectionItem-inner'>
+            <div className='--inner-last MainSectionItem-inner'>
               <div className='MainSectionItem-innerSticky'>
                 <div className='MainSectionItem-background' style={{ backgroundColor: 'var(--section7)' }} />
                 <div className='MainSectionItem-content'>
