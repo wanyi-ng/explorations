@@ -223,7 +223,7 @@ export default function Page() {
                 <div className='MainSectionItem-content'>
                   <div className='MainSectionItem-contentTitle'>
                     <span className='MainSectionItem-index'>01</span>
-                    <h3></h3>
+                    <h3>Sub Heading 1</h3>
                   </div>
                   <div className='MainSectionItem-contentText'>
                     <p>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget tellus nulla. Sed sed efficitur dui. Phasellus pretium malesuada felis, vitae rutrum massa venenatis non.`}</p>
@@ -253,7 +253,7 @@ export default function Page() {
                 <div className='MainSectionItem-content'>
                   <div className='MainSectionItem-contentTitle'>
                     <span className='MainSectionItem-index'>02</span>
-                    <h3></h3>
+                    <h3>Sub heading 2</h3>
                   </div>
                   <div className='MainSectionItem-contentText'>
                     <p>{`Nulla finibus id neque sit amet feugiat. Maecenas rutrum augue non egestas rhoncus. Suspendisse velit dolor, consequat vel tempus ac, vulputate quis nibh.`}</p>
@@ -280,7 +280,7 @@ export default function Page() {
                 <div className='MainSectionItem-content'>
                 <div className='MainSectionItem-contentTitle'>
                     <span className='MainSectionItem-index'>03</span>
-                    <h3></h3>
+                    <h3>Sub heading 3</h3>
                   </div>
                   <div className='MainSectionItem-contentText'>
                     <p>{`Suspendisse porta sagittis pulvinar. Ut at nunc id mauris tincidunt varius sed ac augue. Sed sollicitudin purus ante, quis tincidunt augue auctor id.`}</p>
@@ -307,7 +307,7 @@ export default function Page() {
                 <div className='MainSectionItem-content'>
                   <div className='MainSectionItem-contentTitle'>
                     <span className='MainSectionItem-index'>04</span>
-                    <h3></h3>
+                    <h3>Sub heading 4</h3>
                   </div>
                   <div className='MainSectionItem-contentText'>
                     <p>{`Integer auctor justo eget dolor imperdiet aliquet. Etiam vestibulum dui augue, a aliquet metus blandit commodo. Mauris faucibus dui vel ipsum rhoncus, non pretium nibh egestas.`}</p>
@@ -336,7 +336,7 @@ export default function Page() {
                 <div className='MainSectionItem-content'>
                   <div className='MainSectionItem-contentTitle'>
                     <span className='MainSectionItem-index'>05</span>
-                    <h3></h3>
+                    <h3>Sub heading 5</h3>
                   </div>
                   <div className='MainSectionItem-contentText'>
                     <p>{`Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean venenatis rhoncus molestie. Donec euismod feugiat massa, non venenatis ligula vehicula nec.`}</p>
@@ -365,7 +365,7 @@ export default function Page() {
                 <div className='MainSectionItem-content'>
                   <div className='MainSectionItem-contentTitle'>
                     <span className='MainSectionItem-index'>06</span>
-                    <h3></h3>
+                    <h3>Sub heading 6</h3>
                   </div>
                   <div className='MainSectionItem-contentText'>
                     <p>{`Aliquam vitae ligula sed felis ullamcorper semper id vitae eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer egestas, metus id vestibulum rutrum, leo enim luctus libero, ac tincidunt ipsum sem in sapien. Vivamus iaculis lobortis volutpat.`}</p>
