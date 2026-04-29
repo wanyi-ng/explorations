@@ -7,10 +7,8 @@ export default function MagneticHoverButton() {
   const submitButtonRef = useRef<HTMLButtonElement>(null)
   const submitButtonFiller = useRef<HTMLSpanElement>(null)
 
-  const getXY = (e) => {
-    if (!submitButtonRef.current) return
-    
-    const { left, top, width, height } = submitButtonRef.current.getBoundingClientRect()
+  const getXY = (e: React.MouseEvent) => {
+    const { left, top, width, height } = submitButtonRef.current!.getBoundingClientRect()
     
     const xTransformer = gsap.utils.pipe(
       gsap.utils.mapRange(0, width, 0, 100),
@@ -27,13 +25,13 @@ export default function MagneticHoverButton() {
     }
   }
   
-  const handleMouseButtonEnter = (e) =>  {
+  const handleMouseButtonEnter = (e: React.MouseEvent) =>  {
     const { x, y } = getXY(e)
 
-    const setX = (x) => {
+    const setX = (x: number) => {
       gsap.quickSetter(submitButtonFiller.current, "xPercent")
     }
-    const setY = (x) => {
+    const setY = (y: number) => {
       gsap.quickSetter(submitButtonFiller.current, "yPercent")
     }
     setX(x)
@@ -48,7 +46,7 @@ export default function MagneticHoverButton() {
     return () => gsap.killTweensOf(submitButtonFiller.current)
   }
   
-  const handleMouseButtonLeave = (e) => {
+  const handleMouseButtonLeave = (e: React.MouseEvent) => {
     const { x, y } = getXY(e)
 
     gsap.to(submitButtonFiller.current, {
@@ -62,7 +60,7 @@ export default function MagneticHoverButton() {
     return () => gsap.killTweensOf(submitButtonFiller.current)
   }
 
-  const handleMouseButtonMove = (e) => {
+  const handleMouseButtonMove = (e: React.MouseEvent) => {
     const { x, y } = getXY(e)
 
     gsap.to(submitButtonFiller.current, {
